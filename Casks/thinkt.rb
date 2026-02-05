@@ -3,14 +3,14 @@ cask "thinkt" do
   name "thinkt"
   desc "Tools for exploring LLM conversation traces"
   homepage "https://github.com/wethinkt/go-thinkt"
-  version "0.2.21"
+  version "0.2.22"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
-  binary "thinkt"
-  manpage "docs/man"
+  binary "./cmd/thinkt"
+  manpage "docs/man/*.1"
   bash_completion "docs/completions.bash"
   zsh_completion "docs/completions.zsh"
   fish_completion "docs/completions.fish"
@@ -19,12 +19,12 @@ cask "thinkt" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "d4f44eb03563b558b52780f172484948fb48338fa8f0f806184de2080ac852dc"
+      sha256 "092ec8ae4be1fd9425a855b1347cfb9e658958284bf23b6aecf483ebb2a1c9fb"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "c9dd0d3337bfd15881f0d63fb3309c615009b22604e5afc0d7485a80f3a0de91"
+      sha256 "f30aaf62c1c9b4d6acc9231200fc2437a4c9523fb834df9b71425e67f1de9125"
     end
   end
 
@@ -32,12 +32,12 @@ cask "thinkt" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "5450d84169df57fc25dcd124f10c2fd45b9a3a310dfa71d5f48686d453b69515"
+      sha256 "a0df32ec83a99b383de86efb130932988dee9f6ffaf5007ecfff7adc2896bbd9"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "12b8985781f4a947c45e3bb09ded6d53fc96ae7958503567199eafb991d86806"
+      sha256 "0d4d06f867be05d7bb9bc8f98bc327c741b2e017b9c3368d8590506c7730600e"
     end
   end
 
