@@ -3,28 +3,28 @@ cask "thinkt" do
   name "thinkt"
   desc "Tools for exploring LLM conversation traces"
   homepage "https://github.com/wethinkt/go-thinkt"
-  version "0.2.24"
+  version "0.2.25"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "thinkt"
-  manpage "man/man1/*.1"
-  bash_completion "docs/completions.bash"
-  zsh_completion "docs/completions.zsh"
-  fish_completion "docs/completions.fish"
+  manpage "manpages/*"
+  bash_completion "completions/thinkt.bash"
+  zsh_completion "completions/thinkt.zsh"
+  fish_completion "completions/thinkt.fish"
 
   on_macos do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "a51b9b1064770681e8ec9d1ff5226e5d5e5bef7ba3c3cc8dc38002cff7c22045"
+      sha256 "032bb02f5a89b9a294018e189096e9fca56643041d856d630a06fa002e04b773"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "27af22713b668cea877c4266e85e5b9ad23176c2fe5de34f26485b855ff97401"
+      sha256 "c4b53762adaa6f27f050f5f40710de3eaa5e16e361b61af71d334d869ac976b2"
     end
   end
 
@@ -32,12 +32,12 @@ cask "thinkt" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "525aba187974033f895cf5a3d85b8553d30aa47883e1387a7a3325166d37986a"
+      sha256 "79c15d9707d563ebb5eb97e2525ef9aa311cea27d631a7e6e9d21b58e59a4687"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "005f3e67e54873ccd9409e6610ccf9954d872e3d9085e5601ef3e75900b4caa2"
+      sha256 "e3d248e4e053839b044fd58a3dc03c105f942befc4a0637a4c04580db48d6daa"
     end
   end
 
