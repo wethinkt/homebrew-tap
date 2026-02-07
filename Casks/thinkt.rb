@@ -3,7 +3,7 @@ cask "thinkt" do
   name "thinkt"
   desc "Tools for exploring LLM conversation traces"
   homepage "https://github.com/wethinkt/go-thinkt"
-  version "0.3.2"
+  version "0.3.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -21,8 +21,10 @@ cask "thinkt" do
   manpage "man/man1/thinkt-indexer.1"
   manpage "man/man1/thinkt-projects-copy.1"
   manpage "man/man1/thinkt-projects-delete.1"
+  manpage "man/man1/thinkt-projects-list.1"
   manpage "man/man1/thinkt-projects-summary.1"
   manpage "man/man1/thinkt-projects-tree.1"
+  manpage "man/man1/thinkt-projects-view.1"
   manpage "man/man1/thinkt-projects.1"
   manpage "man/man1/thinkt-prompts-extract.1"
   manpage "man/man1/thinkt-prompts-info.1"
@@ -60,12 +62,12 @@ cask "thinkt" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "b64392012d2f68b254afc29ac962a9838ab906a2911fa127d3c44f93b1902a09"
+      sha256 "0847b1361d9114910298c6588877dc91d66b7e3a8c73d02cb8f821152c190748"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "dab5f668c305e294fda76fcfa8620c2686ec9b94e63f8a0fea09c76bae492c4b"
+      sha256 "b006a299bba7eea1d73d4620b2e6cc47cae1868048af43588cf57939bff54d97"
     end
   end
 
@@ -73,12 +75,12 @@ cask "thinkt" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "8a9dfaab0fb68bd3a12174d4d17a30fbecb55e4f6ca80e9605a42503059d3f69"
+      sha256 "af03b518f886604c7c857c7e16ec4b34de75a7671a56b70b355352cf98912263"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "a37405c845e3553623464dfbb532dce14de73ddd957f84feac60a556f81026e8"
+      sha256 "5081cb3cd75129a12fa1f9dd049baaac12467e995d9fcfaf11f76a5df3633877"
     end
   end
 
