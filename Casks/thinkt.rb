@@ -3,7 +3,7 @@ cask "thinkt" do
   name "thinkt"
   desc "Tools for exploring LLM conversation traces"
   homepage "https://github.com/wethinkt/go-thinkt"
-  version "0.3.3"
+  version "0.3.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,9 +15,6 @@ cask "thinkt" do
   manpage "man/man1/thinkt-completion-powershell.1"
   manpage "man/man1/thinkt-completion-zsh.1"
   manpage "man/man1/thinkt-completion.1"
-  manpage "man/man1/thinkt-docs-man.1"
-  manpage "man/man1/thinkt-docs-markdown.1"
-  manpage "man/man1/thinkt-docs.1"
   manpage "man/man1/thinkt-indexer.1"
   manpage "man/man1/thinkt-projects-copy.1"
   manpage "man/man1/thinkt-projects-delete.1"
@@ -62,12 +59,12 @@ cask "thinkt" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "0847b1361d9114910298c6588877dc91d66b7e3a8c73d02cb8f821152c190748"
+      sha256 "31a9b50cc6f0021e96daecef0de9e3b8724e805e694723b4fb157ed6b24562c3"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "b006a299bba7eea1d73d4620b2e6cc47cae1868048af43588cf57939bff54d97"
+      sha256 "2b2081ae03ae6224c630c5cd6a7c2824204e9e62457cb353e6f819fe7b50a402"
     end
   end
 
@@ -75,12 +72,12 @@ cask "thinkt" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "af03b518f886604c7c857c7e16ec4b34de75a7671a56b70b355352cf98912263"
+      sha256 "fd234a18c68482850ce5e4debc45f4fb9cefe23b1f9086d1422750903974cbe3"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "5081cb3cd75129a12fa1f9dd049baaac12467e995d9fcfaf11f76a5df3633877"
+      sha256 "df5f8e39496bed31ea00a64db46be9bd17c48d71b96f19f33f0d27a7b721978f"
     end
   end
 
