@@ -3,7 +3,7 @@ cask "thinkt" do
   name "thinkt"
   desc "Tools for exploring LLM conversation traces"
   homepage "https://github.com/wethinkt/go-thinkt"
-  version "0.5.0"
+  version "0.5.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -22,9 +22,13 @@ cask "thinkt" do
   manpage "man/man1/thinkt-completion-zsh.1"
   manpage "man/man1/thinkt-completion.1"
   manpage "man/man1/thinkt-indexer-help.1"
+  manpage "man/man1/thinkt-indexer-logs.1"
   manpage "man/man1/thinkt-indexer-search.1"
   manpage "man/man1/thinkt-indexer-sessions.1"
+  manpage "man/man1/thinkt-indexer-start.1"
   manpage "man/man1/thinkt-indexer-stats.1"
+  manpage "man/man1/thinkt-indexer-status.1"
+  manpage "man/man1/thinkt-indexer-stop.1"
   manpage "man/man1/thinkt-indexer-sync.1"
   manpage "man/man1/thinkt-indexer-version.1"
   manpage "man/man1/thinkt-indexer-watch.1"
@@ -40,11 +44,15 @@ cask "thinkt" do
   manpage "man/man1/thinkt-prompts-list.1"
   manpage "man/man1/thinkt-prompts-templates.1"
   manpage "man/man1/thinkt-prompts.1"
-  manpage "man/man1/thinkt-serve-fingerprint.1"
-  manpage "man/man1/thinkt-serve-lite.1"
-  manpage "man/man1/thinkt-serve-mcp.1"
-  manpage "man/man1/thinkt-serve-token.1"
-  manpage "man/man1/thinkt-serve.1"
+  manpage "man/man1/thinkt-server-fingerprint.1"
+  manpage "man/man1/thinkt-server-logs.1"
+  manpage "man/man1/thinkt-server-mcp.1"
+  manpage "man/man1/thinkt-server-run.1"
+  manpage "man/man1/thinkt-server-start.1"
+  manpage "man/man1/thinkt-server-status.1"
+  manpage "man/man1/thinkt-server-stop.1"
+  manpage "man/man1/thinkt-server-token.1"
+  manpage "man/man1/thinkt-server.1"
   manpage "man/man1/thinkt-sessions-copy.1"
   manpage "man/man1/thinkt-sessions-delete.1"
   manpage "man/man1/thinkt-sessions-list.1"
@@ -67,6 +75,8 @@ cask "thinkt" do
   manpage "man/man1/thinkt-theme.1"
   manpage "man/man1/thinkt-tui.1"
   manpage "man/man1/thinkt-version.1"
+  manpage "man/man1/thinkt-web-lite.1"
+  manpage "man/man1/thinkt-web.1"
   manpage "man/man1/thinkt.1"
   bash_completion "completions/thinkt.bash"
   zsh_completion "completions/thinkt.zsh"
@@ -76,12 +86,12 @@ cask "thinkt" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "0390b77e765cfea8e46f36f446560499d7a1ba3b80c1a9040d4080ad55deb392"
+      sha256 "01953d8679ef3ce517cf97be89d1160eecfcbbc774f6e0e9df4190cb013253e8"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "d734d8f9b549bfe854f86381723fad21c1d9c618eb6046e75c1aa635364b2858"
+      sha256 "ef79857e567cdb1933539e93ad20605d138bd9b8f2699957259b76c652c9f33a"
     end
   end
 
@@ -89,12 +99,12 @@ cask "thinkt" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "456f3b80cbd19416650183b7e7bae7468b33486c26dcef979dc5de4ede9347f3"
+      sha256 "28952e6610c0d16d184dbbd43cbad9d3940c9f9d6732678d031945d06572e139"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "d6951733bf269997ebfac97593a73acf0a0d15d8bb0c187954f803063597ecf6"
+      sha256 "d4496e0ca811b349fb071224c8f10f04e7ef30f9157cbcb11b34e1b3699f0b44"
     end
   end
 
