@@ -3,7 +3,7 @@ cask "thinkt-indexer" do
   name "thinkt-indexer"
   desc "Tools for exploring LLM conversation traces"
   homepage "https://github.com/wethinkt/go-thinkt"
-  version "0.6.1"
+  version "0.6.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "thinkt-indexer" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/thinkt-indexer_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "ab2651cd20be5ca041a4317cfe94975903a502aadfe6e2e2347914d0caccebd6"
+      sha256 "aa9787d3042509c02072e2cf6cb11a90b7c1b50a652fec3a8544ddd85016a682"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/thinkt-indexer_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "cdc550510ed242b8b02a088ff48bb8327255a6a058c03ba9d1ed56b95d63cfa1"
+      sha256 "4bba13a8784dc2cba09e1544f00cb4ced8b5e6d336a68ec93592880fe88a487d"
     end
   end
 
@@ -28,12 +28,12 @@ cask "thinkt-indexer" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/thinkt-indexer_#{version}_linux_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "b85718d1b2c3ac72db3c294ec2f25a4e5432157fd2c68559a0127b448f7300c0"
+      sha256 "6779be00fdd2cff70368f5b99d1373de68daa43af9db957ab814caf339159abe"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/thinkt-indexer_#{version}_linux_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "cb12244b0fc0471fc2804d160513b998c59e3f0fa72cd05d5b8f0aa2ea69d014"
+      sha256 "d2abbf52db0b4b65e07231ba5275b41025609b32cb480ef058a0251d16d0ba84"
     end
   end
 
