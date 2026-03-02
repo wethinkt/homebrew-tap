@@ -3,25 +3,30 @@ cask "thinkt" do
   name "thinkt"
   desc "Tools for exploring LLM conversation traces"
   homepage "https://github.com/wethinkt/go-thinkt"
-  version "0.6.4"
+  version "0.7.0"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "thinkt"
+  manpage "man/man1/thinkt-agents-follow.1"
+  manpage "man/man1/thinkt-agents.1"
   manpage "man/man1/thinkt-apps-disable.1"
   manpage "man/man1/thinkt-apps-enable.1"
   manpage "man/man1/thinkt-apps-get-terminal.1"
   manpage "man/man1/thinkt-apps-list.1"
   manpage "man/man1/thinkt-apps-set-terminal.1"
   manpage "man/man1/thinkt-apps.1"
+  manpage "man/man1/thinkt-collect-export-parquet.1"
+  manpage "man/man1/thinkt-collect.1"
   manpage "man/man1/thinkt-completion-bash.1"
   manpage "man/man1/thinkt-completion-fish.1"
   manpage "man/man1/thinkt-completion-powershell.1"
   manpage "man/man1/thinkt-completion-zsh.1"
   manpage "man/man1/thinkt-completion.1"
   manpage "man/man1/thinkt-embeddings.1"
+  manpage "man/man1/thinkt-export.1"
   manpage "man/man1/thinkt-indexer-embeddings.1"
   manpage "man/man1/thinkt-indexer-help.1"
   manpage "man/man1/thinkt-indexer-logs.1"
@@ -95,12 +100,12 @@ cask "thinkt" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "828a980cc197f97815493d134d263a0adb5b7a31a67a76d65bd5ff57e6474db8"
+      sha256 "3129c8c3b0c8f1133aa79b24cbb0c8e48ce3b254cd805e61d60d9be2248d7575"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "5ad8e9e156c9eba96964e8ed40859ef5ceadc7a8ca7a47714977f9ea3d6c4ce3"
+      sha256 "043a99a2da1a3dd966c0b6976507a500507391ad5d33e4ce93fd23ac13809416"
     end
   end
 
@@ -108,12 +113,12 @@ cask "thinkt" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "4a12ab07c44b53780e968dcf709b2687b0e3820e1589dcf1676743c086b850ee"
+      sha256 "92a60140a62d925a6048c833a1dd7e2f12d82c8396f370de1416c17ecfcf84c5"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "87ef8b0e23b9c69d415cc147cbe3e264050b09721315a733f705007c02c4c85e"
+      sha256 "5c2bf8716251201986c836be92a7f7d426b5610ea4f96500a98f3288d2d5cb0f"
     end
   end
 
