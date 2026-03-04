@@ -108,12 +108,12 @@ cask "thinkt" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "039e14a14ee6632cd8a96913ee7a77601b1f69d03d4e0cbd8cf3119096c48d0b"
+      sha256 "c14f879078da428bc8134b8a55a8b779d4ad516ca2b6b1f6813512a9217a5ed7"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "252321dca3462707abdfe2c3ec252196e434099c13e431be33362e499cf1e73d"
+      sha256 "234d62f4c04ddd1e72a2c2a0ba2a362fbb7e655fa439f89789771e61deead492"
     end
   end
 
@@ -121,12 +121,12 @@ cask "thinkt" do
     on_intel do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_amd64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "3912927c89657f40f7bcfd035654a212684358f76128f6e5525c55804c5cc7a4"
+      sha256 "5ab1bc71f87ad7cbc804f9166533f5c54aa9990d4cb2d829d1317d01044fdefc"
     end
     on_arm do
       url "https://github.com/wethinkt/go-thinkt/releases/download/v#{version}/go-thinkt_#{version}_linux_arm64.tar.gz",
         verified: "github.com/wethinkt/go-thinkt"
-      sha256 "140f91c2dd5e905b8db4544663717621e9cea857b6365ab3029a8af55560c327"
+      sha256 "a4cd521ba4890a85664eb4ebe5d896a361c6bd1083fe4fab1740733b76f3c93d"
     end
   end
 
